@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reem Helmy | Backend Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            colors: {
+              rose: {
+                50: "#fff1f2",
+                100: "#ffe4e6",
+                500: "#f43f5e",
+                600: "#e11d48",
+                700: "#be123c",
+              },
+              dark: {
+                900: "#0f172a",
+                800: "#1e293b",
+                700: "#334155",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-dark-900 text-slate-100 font-sans antialiased selection:bg-rose-500 selection:text-white"
+  >
+    <!-- Header / Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-slate-800"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <a href="#" class="text-xl font-bold tracking-tight text-white">
+          REEM<span class="text-rose-500">.HELMY</span>
+        </a>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a
+            href="#about"
+            class="text-slate-300 hover:text-rose-500 transition-colors"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-slate-300 hover:text-rose-500 transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="text-slate-300 hover:text-rose-500 transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="text-slate-300 hover:text-rose-500 transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-300 hover:text-rose-500 transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Resume Download Button in Navbar -->
+          <a
+            href="resume.pdf"
+            download="Reem_Helmy_Resume.pdf"
+            class="text-xs font-semibold py-2 px-3 rounded-lg border border-rose-500/30 bg-rose-500/10 text-rose-400 hover:bg-rose-500 hover:text-white transition-all flex items-center gap-1.5"
+          >
+            <i class="fas fa-download text-[10px]"></i> Download CV
+          </a>
+          <a
+            href="https://www.linkedin.com/in/reem-ossama-bb0ba1235/"
+            target="_blank"
+            class="text-slate-400 hover:text-rose-500 transition-colors text-lg ml-2"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/reemossamaahmed"
+            target="_blank"
+            class="text-slate-400 hover:text-rose-500 transition-colors text-lg"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="about"
+      class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden relative"
+    >
+      <!-- Glow effects -->
+      <div
+        class="absolute top-1/4 left-1/4 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl -z-10"
+      ></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-12"
+        >
+          <!-- Text Content -->
+          <div class="max-w-2xl order-2 md:order-1">
+            <span
+              class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 mb-6"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"
+              ></span>
+              Open to Remote / Hybrid / On-Site
+            </span>
+            <h1
+              class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-6"
+            >
+              Building Scalable & Secure <br />
+              <span
+                class="bg-gradient-to-r from-rose-400 via-pink-500 to-rose-600 bg-clip-text text-transparent"
+                >Backend Solutions</span
+              >
+            </h1>
+            <p class="text-base sm:text-lg text-slate-400 mb-8 leading-relaxed">
+              Hi, I'm
+              <strong class="text-slate-200 font-medium">Reem Helmy</strong>. A
+              Backend Developer specializing in Laravel, PHP, and MySQL. I build
+              clean RESTful APIs, robust database architectures, and systems
+              focused on security and performance.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="px-6 py-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-medium shadow-lg shadow-rose-600/20 transition-all transform hover:-translate-y-0.5 flex items-center gap-2"
+              >
+                Get In Touch
+              </a>
+              <!-- New Highlighted CV Button -->
+              <a
+                href="NewResume.pdf"
+                download="Reem_Helmy_Resume.pdf"
+                class="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-medium shadow-lg shadow-pink-500/20 transition-all transform hover:-translate-y-0.5 flex items-center gap-2"
+              >
+                <i class="fas fa-file-download"></i> Download CV
+              </a>
+              <a
+                href="#projects"
+                class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium border border-slate-700 transition-all transform hover:-translate-y-0.5"
+              >
+                View Projects
+              </a>
+            </div>
+          </div>
+
+          <!-- Image Profile Container -->
+          <div class="order-1 md:order-2 flex-shrink-0 relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-rose-500 to-pink-500 rounded-full blur-2xl opacity-20 animate-pulse"
+            ></div>
+            <div
+              class="relative p-1.5 rounded-full bg-gradient-to-tr from-rose-500 via-pink-500 to-slate-800 shadow-2xl"
+            >
+              <img
+                src="reem.png"
+                alt="Reem Helmy Profile"
+                class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover border-4 border-dark-900 shadow-inner"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section
+      id="skills"
+      class="py-20 bg-dark-800/40 border-y border-slate-800/50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">Technical Stack</h2>
+          <div class="w-12 h-1 bg-rose-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Backend Card -->
+          <div
+            class="bg-dark-800/80 p-8 rounded-2xl border border-slate-800 hover:border-rose-500/30 transition-all group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-500 text-xl mb-6 group-hover:bg-rose-500 group-hover:text-white transition-all"
+            >
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Backend Development
+            </h3>
+            <p class="text-slate-400 text-sm mb-4">
+              PHP, Laravel, RESTful API, Laravel Sanctum, Spatie Laravel
+              Permission, RBAC Architecture.
+            </p>
+          </div>
+
+          <!-- Database & Architecture -->
+          <div
+            class="bg-dark-800/80 p-8 rounded-2xl border border-slate-800 hover:border-rose-500/30 transition-all group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-500 text-xl mb-6 group-hover:bg-rose-500 group-hover:text-white transition-all"
+            >
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Database & Architecture
+            </h3>
+            <p class="text-slate-400 text-sm mb-4">
+              MySQL, Database Design, Query Optimization, Eloquent ORM, MVC,
+              Repository & Service Patterns.
+            </p>
+          </div>
+
+          <!-- Tools & Frontend -->
+          <div
+            class="bg-dark-800/80 p-8 rounded-2xl border border-slate-800 hover:border-rose-500/30 transition-all group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-500 text-xl mb-6 group-hover:bg-rose-500 group-hover:text-white transition-all"
+            >
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Tools & Frontend Knowledge
+            </h3>
+            <p class="text-slate-400 text-sm mb-4">
+              Git, GitHub, Postman, JIRA. Familiar with HTML, CSS, JavaScript,
+              Bootstrap, and ReactJS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Professional Journey
+          </h2>
+          <div class="w-12 h-1 bg-rose-500 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div
+          class="space-y-12 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-slate-800"
+        >
+          <!-- Experience 1 -->
+          <div
+            class="relative flex flex-col md:flex-row items-start md:justify-between group"
+          >
+            <div
+              class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-dark-900 border-4 border-rose-500 -translate-x-[7px] top-1.5 z-10"
+            ></div>
+            <div class="pl-12 md:pl-0 md:w-[45%] md:text-right">
+              <span class="text-sm font-semibold text-rose-400"
+                >2022 — Present</span
+              >
+              <h3 class="text-xl font-bold text-white mt-1">
+                Freelance Backend Developer
+              </h3>
+              <span class="text-sm text-slate-400">Nahfad (Remote)</span>
+            </div>
+            <div
+              class="pl-12 md:pl-0 md:w-[45%] mt-2 md:mt-0 bg-dark-800/40 p-5 rounded-xl border border-slate-800/80"
+            >
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Developed and maintained scalable web applications using
+                Laravel, PHP, and MySQL. Built robust RESTful APIs and focused
+                heavily on code maintainability and UX enhancements.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div
+            class="relative flex flex-col md:flex-row items-start md:justify-between group"
+          >
+            <div
+              class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-dark-900 border-4 border-rose-500 -translate-x-[7px] top-1.5 z-10"
+            ></div>
+            <div class="pl-12 md:pl-0 md:w-[45%] md:text-right md:order-last">
+              <span class="text-sm font-semibold text-rose-400"
+                >2023 — 2025</span
+              >
+              <h3 class="text-xl font-bold text-white mt-1">
+                Teaching Assistant
+              </h3>
+              <span class="text-sm text-slate-400"
+                >New Mansoura University (Egypt)</span
+              >
+            </div>
+            <div
+              class="pl-12 md:pl-0 md:w-[45%] mt-2 md:mt-0 bg-dark-800/40 p-5 rounded-xl border border-slate-800/80"
+            >
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Assisted in teaching computer science core concepts, explained
+                complex programming paradigms to students, and supervised
+                academic lab sessions and graduation projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div
+            class="relative flex flex-col md:flex-row items-start md:justify-between group"
+          >
+            <div
+              class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-dark-900 border-4 border-rose-500 -translate-x-[7px] top-1.5 z-10"
+            ></div>
+            <div class="pl-12 md:pl-0 md:w-[45%] md:text-right">
+              <span class="text-sm font-semibold text-rose-400"
+                >2021 — 2022</span
+              >
+              <h3 class="text-xl font-bold text-white mt-1">
+                Full Stack Web Developer
+              </h3>
+              <span class="text-sm text-slate-400">Attractionme</span>
+            </div>
+            <div
+              class="pl-12 md:pl-0 md:w-[45%] mt-2 md:mt-0 bg-dark-800/40 p-5 rounded-xl border border-slate-800/80"
+            >
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Built, optimized, and managed web applications using Laravel &
+                PHP with a focus on database optimization and overall
+                performance tuning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-20 bg-dark-800/40 border-t border-slate-800/50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">Featured Projects</h2>
+          <div class="w-12 h-1 bg-rose-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-dark-800 p-8 rounded-2xl border border-slate-800/80 flex flex-col justify-between hover:scale-[1.01] transition-transform"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span
+                  class="text-xs font-semibold uppercase tracking-wider text-rose-400"
+                  >Web Application</span
+                >
+                <a
+                  href="https://github.com/reemossamaahmed/Hr-System"
+                  class="text-slate-400 hover:text-white transition-colors text-lg"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">
+                HR Management System
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                A comprehensive backend system for corporate resource
+                management: tracks employees, attendance, leave requests,
+                payroll, and implements fine-grained role-based access control
+                (RBAC).
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >Laravel</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >MySQL</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >JWT Auth</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >REST API</span
+                >
+              </div>
+            </div>
+            <ul
+              class="text-xs space-y-2 text-slate-400 border-t border-slate-800/60 pt-4"
+            >
+              <li>
+                <i class="fas fa-check text-rose-500 mr-2"></i> Attendance &
+                Leave Workflows
+              </li>
+              <li>
+                <i class="fas fa-check text-rose-500 mr-2"></i> Payroll
+                Processing Engine
+              </li>
+            </ul>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-dark-800 p-8 rounded-2xl border border-slate-800/80 flex flex-col justify-between hover:scale-[1.01] transition-transform"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span
+                  class="text-xs font-semibold uppercase tracking-wider text-rose-400"
+                  >E-Learning Platform</span
+                >
+                <a
+                  href="#"
+                  class="text-slate-400 hover:text-white transition-colors text-lg"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">
+                Learning Management System (LMS)
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Robust educational portal supporting multi-role access (Admin,
+                Instructor, Student). Features enrollment systems, progress
+                tracking, quiz submissions, and multi-media file handling.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-8">
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >Laravel</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >Eloquent ORM</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >Media Streams</span
+                >
+                <span
+                  class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800"
+                  >Postman</span
+                >
+              </div>
+            </div>
+            <ul
+              class="text-xs space-y-2 text-slate-400 border-t border-slate-800/60 pt-4"
+            >
+              <li>
+                <i class="fas fa-check text-rose-500 mr-2"></i> Video &
+                Assignment Pipelines
+              </li>
+              <li>
+                <i class="fas fa-check text-rose-500 mr-2"></i> Dynamic Student
+                Analytics
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+      <div
+        class="absolute bottom-0 right-1/4 w-80 h-80 bg-rose-500/5 rounded-full blur-3xl -z-10"
+      ></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-gradient-to-br from-dark-800 to-dark-900 rounded-3xl p-8 md:p-12 border border-slate-800 shadow-xl relative overflow-hidden"
+        >
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+              Let's Connect
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-8">
+              Currently looking for new backend roles and freelance
+              opportunities. Feel free to reach out anytime!
+            </p>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-8"
+            >
+              <a
+                href="mailto:reemhelmy28@gmail.com"
+                class="flex items-center gap-4 bg-dark-900/50 p-4 rounded-xl border border-slate-800/60 hover:border-rose-500/40 transition-colors group"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition-colors"
+                >
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <span class="text-xs sm:text-sm text-slate-300 truncate"
+                  >reemhelmy28@gmail.com</span
+                >
+              </a>
+              <a
+                href="tel:+966579720664"
+                class="flex items-center gap-4 bg-dark-900/50 p-4 rounded-xl border border-slate-800/60 hover:border-rose-500/40 transition-colors group"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition-colors"
+                >
+                  <i class="fas fa-phone"></i>
+                </div>
+                <span class="text-xs sm:text-sm text-slate-300"
+                  >+966 579720664</span
+                >
+              </a>
+            </div>
+
+            <div class="flex justify-center space-x-6 text-2xl">
+              <a
+                href="https://www.linkedin.com/in/reem-ossama-bb0ba1235/"
+                target="_blank"
+                class="text-slate-400 hover:text-rose-500 transition-colors"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-slate-400 hover:text-rose-500 transition-colors"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <p>
+          &copy; 2026 Reem Helmy. Crafted with
+          <i class="fas fa-heart text-rose-500"></i> in Riyadh, KSA.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
